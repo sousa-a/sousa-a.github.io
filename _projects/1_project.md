@@ -4,7 +4,7 @@ title: "YellowLynx MedCorp."
 description: "Exploratory Data Analysis and PowerBi reports"
 author: "Alessandro O de Sousa"
 tags: [EDA, SQL, Python, PowerBI]
-img: /assets/img/figure10_powerbi_page1_availability_and_coverage.jpg
+img: /assets/img/medicines.jpg
 importance: 1
 category: work
 ---
