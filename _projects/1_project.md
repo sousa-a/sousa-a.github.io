@@ -1154,36 +1154,7 @@ The processed data were exported to a csv file and then inserted into a table in
 ### 2.1 PostGreSQL table creation.
 DESCREVER
 
-```sql
-CREATE TABLE IF NOT EXISTS public.hospitals_fact
-(
-	"SenderLocationID" character varying(30) COLLATE pg_catalog."default" NOT NULL,
-	"OrderID" character varying(30) COLLATE pg_catalog."default" NOT NULL,
-	"Date" date,
-	"ReceiverID" character varying(30) COLLATE pg_catalog."default" NOT NULL,
-	"ReceiverName" character varying(100) COLLATE pg_catalog."default" NOT NULL,
-	"InOut" "char",
-	"MovementType" character varying(20) COLLATE pg_catalog."default" NOT NULL,
-	"SKU" character varying(12) COLLATE pg_catalog."default" NOT NULL,
-	"Product" character varying(100) COLLATE pg_catalog."default" NOT NULL,
-	"ClassID" character varying(12) COLLATE pg_catalog."default" NOT NULL,
-	"ClassName" character varying(200) COLLATE pg_catalog."default" NOT NULL,
-	"MeasurementUnit" character varying(5) COLLATE pg_catalog."default" NOT NULL,
-	"StandartPrice" double precision,
-	"Quantity" double precision NOT NULL,
-	"RemainingStock" double precision NOT NULL,
-	"StockValue" double precision NOT NULL,
-	CONSTRAINT hospitals_fact_pkey PRIMARY KEY ("SenderLocationID", "OrderID", "SKU", "Quantity")
-)
-
-TABLESPACE pg_default;
-
-ALTER TABLE IF EXISTS public.hospitals_fact
-	OWNER to postgres;
-```
-
-
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1223,7 +1194,7 @@ ALTER TABLE IF EXISTS public.hospitals_fact
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
 </body>
-</html><br>
+</html><br>-->
 
 {% include figure.html path="/assets/img/figure6_postgre_table_creation.jpg" class="img-fluid rounded z-depth-1" zoomable=true %} 
 <div class="caption">Figure 6. Table creation in a PostGreSQL database.</div>
@@ -1278,8 +1249,7 @@ In order to prevent performance and other issues, is it is preferable to perform
 
 {% include figure.html path="/assets/img/figure13_powerbi_page4_stock_usage_by_hospital.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
 <div class="caption">Figure 13. PowerBI report 4</div>
-<br>
-
+<br><br>
 <br>
 
 <hr>
