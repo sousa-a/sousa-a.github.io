@@ -3,7 +3,7 @@ layout: page
 title: "YellowLynx MedCorp. Pt2"
 description: Predicting medicine usage in the hospital context.
 author: "Alessandro O de Sousa"
-tags: [Python, Linear regression, Naive Bayesm, XGBoost]
+tags: [Python, Linear regression, Naive Bayes, XGBoost]
 img: assets/img/3.jpg
 importance: 2
 category: work
