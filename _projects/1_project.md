@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "YellowLynx MedCorp."
+title: "YellowLynx MedCorp. Pt1"
 description: "Exploratory Data Analysis and PowerBi reports"
 author: "Alessandro O de Sousa"
 tags: [EDA, SQL, Python, PowerBI]
