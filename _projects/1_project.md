@@ -9,19 +9,26 @@ importance: 1
 category: work
 ---
 
-# Case Study: Analysis of medicine usage in an integrated hospital network (YellowLynx MedCorp).
+<hr>
+
+# Case Study: Analysis of medicine usage in an integrated hospital network (YellowLynx MedCorp) - Part 1.
 This project consists of a fictional scenario in which a health-related enterprize, YellowLynx MedCorp, needs to closely monitor inventory and stock usage, particularly medicines, across its various hospital departments located in a metropolitan area.
 
 ## Business problem
-YellowLynx MedCorp is a fast-paced growing healthcare company that has closed on the acquisition of two more hospitals. Each hospital had its own enterprise resource planning (ERP) used to manage stock and purchases.
-Also, the nomenclature used for each product is slightly different from hospital to hospital. That is also the case for department's names.
+YellowLynx MedCorp is a fast-paced growing healthcare company that has closed on the acquisition of two more hospitals. Each hospital had its own enterprise resource planning (ERP) used to manage stock and purchases.<br>
+
+Also, the nomenclature used for each product is slightly different from hospital to hospital. That is also the case for department's names.<br>
+
 YellowLynx MedCorp need to closely monitor inventory and medicine usage in a timely manner using metrics for managerial use in a integrated hospital network.
 It is necessary to standartize and integrate the information coming from these various sources.
 
 ## Objectives:
-1. To demonstrate end-to-end capability in understanding business problems and proposing solutions, always using an analytical mindset and attention to detail.
-2. To demonstrate proficiency in relational databases, SQL language and Python for data cleaning/preparation, analysis, and insights.
+1. To demonstrate end-to-end capability in understanding business problems and proposing solutions, always using an analytical mindset and attention to detail.<br>
+
+2. To demonstrate proficiency in relational databases, SQL language and Python for data cleaning/preparation, analysis, and insights.<br>
+
 3. To demonstrate the ability to integrate and summarize the acquired knowledge in reports, executive summaries, and dashboards that provide relevant information related to inventory management and financial expenditures information to the executive team in a timely and reliable manner.<br><br>
+
 Despite being a personal case study, the reports were written using the third person plural, as if it were a team effort.<br><br>
 **Disclaimer:** The data used in this case study is completely fictional, entirely created by the author and used for educational purposes only. No data was not collected from any existing databases elsewhere.<br><br>
 
@@ -35,7 +42,7 @@ The final product comprises 4 PowerBI reports decipted bellow.
 
 ## 1. Data collection, cleaning and Exploratory Data Analysis (EDA) process
 The dataset has a primary source, it was provided by the IT department of the company in a zip file containing 5 csv files detailing the stock movement/usage from the pharmacy of each hospital from 2020 to 2023.
-Each hospital name was replaced by an acronym that describes the size and specialization. There were 3 large-size general hospitals and 2 medium-size specialized hospitals.<br><br><br>
+Each hospital name was replaced by an acronym that describes the size and specialization. There were 3 large-size general hospitals and 2 medium-size specialized hospitals.<br><br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* LGH1: Large-size General Hospital 1<br><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* LGH2: Large-size General Hospital 2<br><br>
@@ -52,6 +59,7 @@ import os, sys
 import random
 import string
 ```
+
 ### 1.1 Data loading
 The provided csv files were loaded into dataframes in a Jupyter Notebook using Python 3.10.9.<br>
 
@@ -60,6 +68,7 @@ At first glance, it was possible to observe a high variability in the number of 
 After an extensive cleaning process, the dataframes were combined into the *hospitals_df* dataframe.<br>
 
 This dataset comprises all stock movement/usage history from the pharmacy to each hospital department. It is shown bellow a brief description of each feature found in the cleaned *hospitals_df* dataframe.<br>
+
 Each row consists of a stock movement of a product/medicine.<br>
 
 <caption><b>Table 1. Features of the hospitals_df dataframe.</b></caption>
@@ -144,7 +153,8 @@ hospitals_shape_columns = hospitals_data_shape.merge(hospitals_data_columns, how
 </html><br>
 
 ### 1.4 Nomenclature standardization
-Numpy arrays containing unique entries for each variable were created and exported to individual csv files.<br> Extensive analyses conducted in Microsoft Excel allowed the construction of several dictionaries produced to standardize nomenclatures and to allow further transformations<br>
+Numpy arrays containing unique entries for each variable were created and exported to individual csv files.<br> Extensive analyses conducted in Microsoft Excel allowed the construction of several dictionaries produced to standardize nomenclatures and to allow further transformations<br><br>
+
 
 ### 1.5 Data anonymization
 Although this is a fictional dataset, we used the random module to generate alphanumeric sequences in order to replace a patient name list created previously using the Faker package (https://faker.readthedocs.io/).<br>
@@ -236,7 +246,8 @@ In addition to the extensive cleaning process, there were no missing values or d
 ```python
 hospitals_df.shape
 ```
-(1797173, 16)<br>
+(1797173, 16)<br><br>
+
 ```python
 hospitals_df.info()
 ```
@@ -531,8 +542,7 @@ medicines_df = pd.DataFrame(data= {
 
 ### 1.6.3 Total Stock Usage (TSU)
 We also wanted to evaluate the total stock usage averages ($) across hospitals by quarter as well as the monthly and daily averages by quarter.<br>
-A *Tsu* class and methods were created to evaluate each aggregate values.<br>
-The concept of Total Stock Usage (TSU) was used in the analyses to follow.<br>
+A *Tsu* class and methods were created to evaluate each aggregate values. The concept of Total Stock Usage (TSU) was used in the analyses to follow.<br>
 
 <html lang="en">
 <head>
@@ -745,6 +755,7 @@ msh2_month_tsu_by_medicine_2023 = msh2_tsu.month_sum_by_medicine_df(2023)
 </html><br>
 
 ### 1.6.3.1 Visualizing Total Stock usage (TSU) time series <br>
+
 ### 1.6.3.1.1 Total Stock usage (TSU) monthly averages by quarter in each hospital<br>
 We used the monthly_avg_quarter_df method from he _TSU_ class to visualize the TSU variation among hospitals over time.<br>
 ##### Insights:<br>
@@ -882,6 +893,7 @@ fig.show()
 <br>
 
 ### 1.6.3.1.2 Total Stock usage (TSU) by month in each hospital
+
 #### Insights:<br>
 
 * In the time period depicted, the TSU line plots show a increase from 2020 to 2021 and a deacrease in 2022 and 2023;
@@ -939,9 +951,10 @@ plt.show()
 <br>
 
 ### 1.6.3.2 Total Stock usage (TSU) across hospital departments (TOP 10)
+
 We identified the top 10 hospital departments with the highest TSU in the first quarter of 2023.
 
-##### Insights:<br>
+#### Insights:<br><br>
 
 * The emergency departments of the larger hospitals are the top stock consumers. At least half of the pharmacy stock was used in the emergency departments in the first quarter of 2023.<br><br>
 * LGH1 has a very busy Gynecology and Obstetrics department. In LGH2 the Nephrology dept. and LGH3 stands out for its ICU.<br><br>
@@ -1041,14 +1054,15 @@ plt.show()
 
 {% include figure.html path="/assets/img/figure4_tsu_top_dept.png" class="img-fluid rounded z-depth-1" zoomable=true %} 
 <div class="caption">Figure 4. Total Stock Usage (TSU) across hospital departments (2023-Q1).</div>
+<br>
+
 
 ### 1.6.3.3 Deviation from the mean TSU
-In order to analyse the behaviour of Total Stock Usage (TSU) along the year, we defined a function to visualize the deviation from the mean values for a given year.<br>
-We had previously created a column named 'Normalized (mean) deviation from the mean'.<br>
-In the resulting multiplot, a red dashed line represents the mean yealy TSU value for each hospital.<br>
-In each plot the blue line represents the deviations from the mean TSU value, after the normalization process.<br>
+In order to analyse the behaviour of Total Stock Usage (TSU) along the year, we defined a function to visualize the deviation from the mean values for a given year. We had previously created a column named 'Normalized (mean) deviation from the mean'.<br>
 
-#### Insights:<br>
+In the resulting multiplot, a red dashed line represents the mean yealy TSU value for each hospital.In each plot the blue line represents the deviations from the mean TSU value, after the normalization process.<br><br>
+
+#### Insights:<br><br>
 
 * There is not a clear picture of seasonality at the aggregate level.<br><br>
 * It is well known that the Sars-CoV (COVID-19) pandemic resulted in an increase in the numbers os hospitalization as well as prices of medications and other healt-related products.<br><br>
@@ -1149,11 +1163,11 @@ plt.show()
 <div class="caption">Figure 5. Mean Normalized Deviation from the yearly Total Stock Usage (TSU) average.</div>
 
 ## 2. Data load into a PostGreSQL database
-The processed data were exported to a csv file and then inserted into a table in an existing PostGreSQL database.<br>
+The processed data were exported to a csv file and then inserted into a table in an existing PostGreSQL database.<br><br>
 
 ### 2.1 PostGreSQL table creation.
-DESCREVER
 
+SUBSTITUIR FIGURA STOCK VALUE TEM QUE SER EM DECIMAL OU NUMERIC. DOUBLE NÃO!
 <!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1198,6 +1212,9 @@ ALTER TABLE IF EXISTS public.hospitals_fact
 
 {% include figure.html path="/assets/img/figure6_postgre_table_creation.jpg" class="img-fluid rounded z-depth-1" zoomable=true %} 
 <div class="caption">Figure 6. Table creation in a PostGreSQL database.</div>
+<br>
+
+
 
 ### 2.2 Processed data load into table.
 
@@ -1208,6 +1225,8 @@ ALTER TABLE IF EXISTS public.hospitals_fact
 
 {% include figure.html path="/assets/img/figure8_postgre_test_query.jpg" class="img-fluid rounded z-depth-1" zoomable=true %} 
 <div class="caption">Figure 8. Test query.</div>
+<br>
+
 
 ## 3. Visualizations, metrics and reports in PowerBI
 In Power BI, SQL queries were designed to retrieve information from the database in order to construct reports with relevant metrics for managerial purposes.<br><br>
@@ -1251,5 +1270,18 @@ In order to prevent performance and other issues, is it is preferable to perform
 <div class="caption">Figure 13. PowerBI report 4</div>
 <br><br>
 <br>
+
+
+## Conclusion
+
+In this first part of the YellowLynx MedCorp Case Study, it was possible to accomplish the goals of the proposed case study:
+
+1. To demonstrate end-to-end capability in understanding business problems and proposing solutions, always using an analytical mindset and attention to detail.<br>
+
+2. To demonstrate proficiency in relational databases, SQL language and Python for data cleaning/preparation, analysis, and insights.<br>
+
+3. To demonstrate the ability to integrate and summarize the acquired knowledge in reports, executive summaries, and dashboards that provide relevant information related to inventory management and financial expenditures information to the executive team in a timely and reliable manner.<br><br>
+
+The second part, we will evaluate medicine usage prediction in the hospital context using and  designing forecast models to achieve this goal.
 
 <hr>
