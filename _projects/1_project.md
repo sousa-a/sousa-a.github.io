@@ -1282,6 +1282,6 @@ In this first part of the YellowLynx MedCorp Case Study, it was possible to acco
 
 3. To demonstrate the ability to integrate and summarize the acquired knowledge in reports, executive summaries, and dashboards that provide relevant information related to inventory management and financial expenditures information to the executive team in a timely and reliable manner.<br><br>
 
-The second part, we will evaluate medicine usage prediction in the hospital context using and  designing forecast models to achieve this goal.
+In the second part, we will evaluate medicine usage prediction in the hospital context using and  designing forecast models to achieve this goal.
 
 <hr>
