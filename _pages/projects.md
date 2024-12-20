@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A collection of your my projects.
+description: A collection of my projects.
 nav: true
 nav_order: 1
-display_categories: [work, fun]
+display_categories: [Case Study - YellowLynx MedCorp (fictional), Project 2, The Metal Archives]
 horizontal: false
 ---
 

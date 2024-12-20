@@ -1,97 +1,109 @@
-- title: General Information
+- title: Skylls
   type: map
   contents:
-    - name: Full Name
-      value: Alessandro Oliveira de Sousa
-    - name: Date of Birth
-      value: 
+
+    - name: Analytics/Science
+      value: Data Visualization | Business Intelligence | | Statistics | Predictive Modeling | Machine Learning | Data Preprocessing | ETL | Data Transformation | Data Wrangling | Feature Engineering | Regression Analysis | Time Series Analysis | Expenditure analysis | Hypothesis Testing | A/B Testing
+
+    - name: Tools and languages
+      value: Python | SQL | Power BI | Tableau | DAX | m | Power Query | Microsoft Excel | RPA | R | MySQL | PostgreSQL | MS SQL Server
+      
+    - name: Soft skills
+      value: Communication (written and oral) | Collaboration | Teamwork | Project Management | Problem Solving
+      
     - name: Languages
-      value: Portuguese, English
+      value: Portuguese (native speaker), English
+
+
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Director
+      institution: Department of Health of the Federal District, Brasília, Brazil
+      year: 2024 - current
+      description:
+        - Direct the Directorate of Drug and Health Supplies Planning of the Department of Health of the Federal District, which oversees a network of 14 hospitals, district reference units, and more than 170 primary healthcare units (neighborhood clinics) serving 4.8 million patients.<br><br>
+        
+        - title: Responsible for managing a budget of approximately $100M (around R$ 600M) allocated for the purchase of medications, hospital supplies, laboratory materials, orthoses, and prostheses.<br><br>
+        
+          contents:
+            - The Directorate itself is composed of 4 departments and a total of 60 people.
+
+    - title: Manager
+      institution: Department of Health of the Federal District, Brasília, Brazil
+      year: 2023 - 2024
+      description:
+        - Managed the Orthotics and Prosthetics Planning Department, a team of 12 people, responsible for budgeting, contract management, and monitoring the surgical and outpatient use of orthotics and prosthetics in the hospitals of the Department of Health of the Federal District.
+
+    - title: Analyst / Advisor
+      institution: Department of Health of the Federal District, Brasília, Brazil
+      year: 2020 - 2023
+      description:
+        - Developed methodologies for monitoring inventory and contract balances, as well as dashboards to provide information to assist in decision-making by senior management using Python and Power BI.<br><br>
+                
+        - Implemented metrics and key performance indicators related to the use of medications and supplies, as well as their dispensing to patients in outpatient or inpatient care across each of the hospitals in the network using SQl, PostgreSQL, Python, Power BI and Tableau.
+
+    - title: Lecturer
+      institution: University of Brasília, Brasília, Brazil
+      year: 2012 - 2014
+      description:
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Brasília, Brazil
+      institution: University of Brasília, Brasília, Brazil
       year: 2012
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Genetics
+
     - title: Bachelor of Pharmaceutical Sciences
-      institution: University of Brasília, Brazil
+      institution: University of Brasília, Brasília, Brazil
       year: 2008
-      description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
+      
+- title: Other courses
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Google Advanced Data Analytics
+      institution: Coursera
+      year: 2023
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Google Data Analytics
+      institution: Coursera
+      year: 2023
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+#- title: Open Source Projects
+  #type: time_table
+  #contents:
+    #- title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      #year: 2015-now
+      #description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+#- title: Honors and Awards
+  #type: time_table
+  #contents:
+    #- year: 1921
+      #items: 
+        #- Nobel Prize in Physics 
+       #- Matteucci Medal
+    #- year: 2029
+      #items: 
+        #- Max Planck Medal
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+#- title: Academic Interests
+  #type: nested_list
+  #contents:
+    #- title: Topic 1.
+      #items: 
+        #- Description 1.
+        #- Description 2.
+    #- title: Topic 2.
+      #items:
+        #- Description 1.
+        #- Description 2.
 
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+#- title: Other Interests
+  #type: list
+  #contents:
+    #- <u>Hobbies:</u> Hobby 1, Hobby 2, etc.

@@ -1,69 +1,68 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Alessandro Oliveira de Sousa",
+    "label": "",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "alessandroodesousa@gmail.com",
+    "phone": "",
+    "url": "",
+    "summary": "some text",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "",
+      "countryCode": "",
+      "region": ""
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Linkedin",
+        "username": "alessandro-sousa-ab8291b2",
+        "url": "https://www.linkedin.com/in/alessandro-sousa-ab8291b2/"
+      },
+      {
+        "network": "GitHub",
+        "username": "sousa-a",
+        "url": "https://github.com/sousa-a/"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Department of Health of the Federal District, Brasília, Brasil",
+      "position": "Director",
+      "url": "https://saude.df.gov.br/",
+      "startDate": "03/2024",
+      "endDate": "current",
+      "summary": "Direct the Directorate of Drug and Health Supplies Planning of the Department of Health of the Federal District, which oversees a network of 14 hospitals, district reference units, and more than 170 primary healthcare units (neighborhood clinics) serving 4.8 million patients. The Directorate itself is composed of 4 departments and a total of 60 people.",
       "highlights": [
-        "Relativity"
+        ""
       ]
     }
   ],
   "volunteer": [],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "University of Brasília, Brasília, Brasil",
+      "url": "https://unb.br/",
+      "area": "Genetics",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "startDate": "08/2008",
+      "endDate": "07/2012",
       "score": "",
       "courses": [
-        "Theory of Relativity"
-      ]
+        "
     }
   ],
   "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
+    
   ],
   "certificates": [],
   "publications": [],
   "skills": [],
   "languages": [
     {
-      "language": "German",
+      "language": "Portuguese",
       "fluency": "Native speaker"
     },
     {
