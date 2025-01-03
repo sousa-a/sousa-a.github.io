@@ -3,7 +3,7 @@ layout: post
 title: "Data preparation"
 description: "Data aquisition, preprocessing/cleaning and ETL"
 author: "Alessandro O de Sousa"
-tags: [Data cleaning, ETL, SQL, Python, Power BI]
+tags: [Data cleaning, ETL, SQL, Pandas, Numpy, Seaborn, Matplotblib, Plotly, Power BI]
 img: /assets/img/medicines.jpg
 importance: 1
 category: Case Study - YellowLynx MedCorp (fictional)

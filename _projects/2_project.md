@@ -3,7 +3,7 @@ layout: post
 title: "EDA and Data visualization"
 description: Exploratory Data Analysis and PowerBi reports.
 author: "Alessandro O de Sousa"
-tags: [EDA, Data visualization, Python, Seaborn, Matplotlib, Power BI, PostgreSQL]
+tags: [EDA, Data visualization, Pandas, Numpy, Seaborn, Matplotlib, Plotly, Power BI, PostgreSQL]
 img: assets/img/eda.png
 importance: 2
 category: Case Study - YellowLynx MedCorp (fictional)

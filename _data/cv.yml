@@ -6,8 +6,8 @@
       value: Data Visualization | Business Intelligence | | Statistics | Predictive Modeling | Machine Learning | Data Preprocessing | ETL | Data Transformation | Data Wrangling | Feature Engineering | Regression Analysis | Time Series Analysis | Expenditure analysis | Hypothesis Testing | A/B Testing
 
     - name: Tools and languages
-      value: Python | SQL | Power BI | Tableau | DAX | m | Power Query | Microsoft Excel | RPA | R | MySQL | PostgreSQL | MS SQL Server
-      
+      value: Pandas | Numpy | Statsmodel | SciPy | Scikit-Learn | Seaborn | Matplotlib | Plotly | Selenium | SQL | Power BI | Tableau | DAX | m | Power Query | Microsoft Excel | RPA | R | MySQL | PostgreSQL
+
     - name: Soft skills
       value: Communication (written and oral) | Collaboration | Teamwork | Project Management | Problem Solving
       
