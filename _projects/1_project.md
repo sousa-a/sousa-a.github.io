@@ -41,7 +41,9 @@ Despite being a personal case study, the reports were written using the third pe
 
 ### Final product snapshots
 
-The final product comprises 4 Power BI reports decipted bellow.
+The final product comprises a 4 page Power BI report embed bellow.
+
+<iframe title="hospitals" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDJhZGVkZjUtZDI1ZS00NDc5LThkODUtMGYwNDU2OGRhYmZiIiwidCI6IjE2MTMyNTk2LWExMzgtNGM4NS1hYTViLTY0ZDk5YTJlY2U4NyJ9" frameborder="0" allowFullScreen="true"></iframe>
 
 {% include figure.html path="/assets/img/figure1_powerbireports.jpg" class="img-fluid rounded z-depth-1" zoomable=true %} 
 <div class="caption">Figure 1. Final product snapshots.</div>
