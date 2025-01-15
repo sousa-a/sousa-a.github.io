@@ -39,15 +39,14 @@ It is necessary to standartize and integrate the information coming from these v
 Despite being a personal case study, the reports were written using the third person plural, as if it were a team effort.<br><br>
 **Disclaimer:** The data used in this case study is completely fictional, entirely created by the author and used for educational purposes only. No data was not collected from any existing databases elsewhere.<br><br>
 
-### Final product snapshots
+### Final product
 
 The final product comprises a 4 page Power BI report embed bellow.
 
-<iframe title="hospitals" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDJhZGVkZjUtZDI1ZS00NDc5LThkODUtMGYwNDU2OGRhYmZiIiwidCI6IjE2MTMyNTk2LWExMzgtNGM4NS1hYTViLTY0ZDk5YTJlY2U4NyJ9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="hospitals" width="850" height="490" src="https://app.powerbi.com/view?r=eyJrIjoiNDJhZGVkZjUtZDI1ZS00NDc5LThkODUtMGYwNDU2OGRhYmZiIiwidCI6IjE2MTMyNTk2LWExMzgtNGM4NS1hYTViLTY0ZDk5YTJlY2U4NyJ9" frameborder="0" allowFullScreen="true"></iframe>
 
-{% include figure.html path="/assets/img/figure1_powerbireports.jpg" class="img-fluid rounded z-depth-1" zoomable=true %} 
-<div class="caption">Figure 1. Final product snapshots.</div>
-<br>
+<br><br>
+
 ## 3. Data collection, cleaning and Exploratory Data Analysis (EDA) process
 The dataset has a primary source, it was provided by the IT department of the company in a zip file containing 5 csv files detailing the stock movement/usage from the pharmacy of each hospital from 2020 to 2023.
 Each hospital name was replaced by an acronym that describes the size and specialization. There were 3 large-size general hospitals and 2 medium-size specialized hospitals.<br><br>
