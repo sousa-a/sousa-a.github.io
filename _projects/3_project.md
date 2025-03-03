@@ -33,13 +33,43 @@ Although the data in this case study is fictional, it demonstrates that extracti
 
 It is well known that the Sars-CoV (COVID-19) pandemic resulted in an increase in the numbers os hospitalization as well as prices of medications and other healt-related products. In contrast, some healthcare services and elective surgeries procedures where almost haulted during the pandemic.
 
-Time series forecasting is not a easy task. There is not a "one for all" statistical model. Given that it was difficult to extract useful information of TSU at the aggregate level, we decided to redirect our efforts in the prediction of each product in terms of individual quantities.
+Time series forecasting is not a easy task. There is not a "one for all" statistical model. Given that it was difficult to extract useful information of TSU at the aggregate level, we decided to redirect our efforts to predict of each product in terms of quantity used by month.
 
-We used [Prophet](https://facebook.github.io/prophet/) to generate a Plotly dashboard to evaluate the medicine usage forecasting for the next 3 months. [Prophet](https://facebook.github.io/prophet/) is a modular regression model useful for time series that have strong seasonal effects and several seasons of historical data, robust to missing data and shifts in the trend, and capable of handling outliers.<br><br>
+We took advantage of the XGBoost algorithm's speed and efficiency to perform forecasts of the usage of several medicines. We show bellow the forecast for the usage of the medicine sugammadex at LGH1 hospital. Sugammadex is used in the reversal of neuromuscular blockade induced by rocuronium and vecuronium in general anaesthesia.
 
-The example bellow shows the time series of daily usage for the medicine fentanyl, a synthetic opioid primarily used as an analgesic or sedative. It was widely used to mantain sedation and suppress the cough reflex of COVID-19 patients with severe respiratory symptoms who required orotracheal intubation.<br><br>
+{% include figure.html path="/assets/img/sugammadex_xgboost_forecast.jpg" class="img-fluid rounded z-depth-1" zoomable=true %} 
+<div class="caption">Figure 1. Xgboost forecast of sugammadex at LGH1 hospital.</div>
+<br>
 
-{% include dash.html path="dash.html" %}
-<div class="caption">Daily Medicine Usage and forecasting using Prophet(https://facebook.github.io/prophet/). The image above shows the number of units used daily in the hospital as well as the following 90 days.</div><br><br>
+For this example in particular, the model performed pretty well, showed low error values and a high R², as summarized in the table below.
 
+<caption><b>Table 6. Regression-based evaluation metrics for sugammadex usage prediction using XGBoost.</b></caption>
+
+| Metric |   Value  |
+|:------:|:--------:|
+|   MAE  | 4.605989 |
+|  RMSE  | 5.118092 |
+|   R²   | 0.930788 |
+
+<br>
+
+
+{% include figure.html path="/assets/img/aspirin_xgboost_forecast.jpg" class="img-fluid rounded z-depth-1" zoomable=true %} 
+<div class="caption">Figure 1. Xgboost forecast of aspirin at LGH1 hospital.</div>
+<br><br><br>
+
+
+
+
+TEXT ABOUT ASPIRIN, ERROS AND OTHER THINGS.
+
+<caption><b>Table 6. Regression-based evaluation metrics for sugammadex usage prediction using XGBoost.</b></caption>
+
+| Metric |    Value   |
+|:------:|:----------:|
+|   MAE  | 418.350098 |
+|  RMSE  | 507.437264 |
+|   R²   |  0.672920  |
+
+<br>
 
