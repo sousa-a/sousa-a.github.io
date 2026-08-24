@@ -1,0 +1,33 @@
+{{ if .IsHome }}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const profile = document.querySelector('.profile');
+    if (!profile) return;
+
+    const metrics = document.createElement('div');
+    metrics.className = 'metrics';
+    metrics.innerHTML = `
+      <div class="metric">
+        <div class="number">R$21M+</div>
+        <div class="label">Intercepted fraudulent & abusive claims</div>
+      </div>
+      <div class="metric">
+        <div class="number">110K</div>
+        <div class="label">Lives covered by the health plan</div>
+      </div>
+      <div class="metric">
+        <div class="number">8.3M+</div>
+        <div class="label">Rows scored in production ML pipeline</div>
+      </div>
+    `;
+
+    const buttons = profile.querySelector('.buttons');
+    if (buttons) {
+      profile.insertBefore(metrics, buttons);
+    } else {
+      profile.appendChild(metrics);
+    }
+  });
+</script>
+{{ end }}
+

@@ -1,0 +1,140 @@
+/* ── Impact metrics row on homepage ── */
+.metrics {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2.5rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.metric {
+  text-align: center;
+}
+
+.metric .number {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.1;
+}
+
+.metric .label {
+  font-size: 0.85rem;
+  color: var(--secondary);
+  margin-top: 0.25rem;
+  max-width: 160px;
+}
+
+/* ── Project cards ── */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--primary);
+}
+
+.project-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+}
+
+.project-card h3 a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.project-card p {
+  margin: 0 0 0.75rem;
+  color: var(--secondary);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.project-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-card .tags span {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--secondary);
+}
+
+.project-card .impact {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* ── About page - tech stack pills ── */
+.stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.75rem 0 1.5rem;
+}
+
+.stack-pills span {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--secondary);
+}
+
+/* ── CV timeline ── */
+.cv-entry {
+  margin-bottom: 1.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+
+.cv-entry .cv-period {
+  font-size: 0.82rem;
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.cv-entry h3 {
+  margin: 0.15rem 0 0.1rem;
+  font-size: 1.05rem;
+}
+
+.cv-entry .cv-org {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+
+.cv-entry ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.cv-entry ul li {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+
+/* ── General polish ── */
+.post-content h2 {
+  margin-top: 2rem;
+}
+

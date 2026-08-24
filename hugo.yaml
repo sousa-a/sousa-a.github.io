@@ -1,0 +1,77 @@
+baseURL: "https://sousa-a.github.io/"
+languageCode: "en-us"
+title: "Alessandro O. Sousa"
+theme: "PaperMod"
+
+params:
+  env: production
+  description: "Healthcare Fraud, Waste & Abuse Detection"
+  author: "Alessandro O. Sousa"
+  defaultTheme: light
+  ShowReadingTime: false
+  ShowShareButtons: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowToc: false
+  hideSummary: false
+  showtags: false
+
+  profileMode:
+    enabled: true
+    title: "Alessandro O. Sousa"
+    subtitle: |
+      Healthcare Fraud, Waste & Abuse detection.
+      I build systems that find what shouldn't be billed.
+    imageUrl: "img/profile.jpg"
+    imageWidth: 160
+    imageHeight: 160
+    buttons:
+      - name: Projects
+        url: /projects/
+      - name: About
+        url: /about/
+      - name: CV
+        url: /cv/
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/sousa-a"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/alessandro-sousa-ab8291b2"
+    - name: email
+      url: "mailto:alessandroodesousa@gmail.com"
+
+  assets:
+    favicon: "img/favicon.ico"
+    customCSS:
+      - "css/custom.css"
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 20
+    - identifier: cv
+      name: CV
+      url: /cv/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+markup:
+  highlight:
+    style: monokai
+    lineNos: false
+  goldmark:
+    renderer:
+      unsafe: true
+
